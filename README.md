@@ -5,8 +5,8 @@
 #### Clone the repository
 
 ```
-git clone https://github.com/linea-it/canis.git
-cd canis
+git clone https://github.com/linea-it/canis2.git
+cd canis2
 ```
 
 ### Development

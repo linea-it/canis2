@@ -8,7 +8,7 @@ function Home() {
   return (
     <div>
       <Container>
-        <Grid container>
+        <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography
               variant="h3"
@@ -16,10 +16,7 @@ function Home() {
               align="center"
               color="primary"
             >
-              Minicurso
-            </Typography>
-            <Typography variant="h6" align="center" color="primary">
-              (Edição Piloto)
+              Minicursos
             </Typography>
             <br />
             <Typography variant="h4" align="center" color="primary">
@@ -27,28 +24,48 @@ function Home() {
                 Introdução a ferramentas computacionais aplicadas à e-Astronomia
               </strong>
             </Typography>
-            <br />
-            <br />
+          </Grid>
+
+          <Grid item xs={12} md={6}>
             <Typography variant="h5" align="center" color="primary">
-              Módulos LIneA Science Server & Jupyter Notebook
+              Minicurso LIneA Science Server
             </Typography>
             <Typography variant="h5" align="center" color="primary">
-              Responsáveis: Adriano Pieres e Julia Gschwend
+              Responsável: Adriano Pieres
             </Typography>
             <Typography variant="h5" align="center" color="primary">
-              Público alvo: estudantes de Graduação
-            </Typography>
-            <Typography variant="h5" align="center" color="primary">
-              Inscrição: até 04 de agosto de 2021
-            </Typography>
-            <Typography variant="h5" align="center" color="primary">
-              Curso gratuito e online
+              Duração: três aulas de 2 horas
             </Typography>
             <Typography variant="h5" align="center" color="primary">
               Total de vagas: 15
             </Typography>
+          </Grid>
+          <Grid item xs={12} md={6}>
             <Typography variant="h5" align="center" color="primary">
-              Duração: 2 horas por aula
+              Minicurso Jupyter Notebook
+            </Typography>
+            <Typography variant="h5" align="center" color="primary">
+              Responsável: Julia Gschwend
+            </Typography>
+            <Typography variant="h5" align="center" color="primary">
+              Duração: quatro aulas de 2 horas
+            </Typography>
+            <Typography variant="h5" align="center" color="primary">
+              Total de vagas: 15
+            </Typography>
+          </Grid>
+
+          <Grid xs={12}>
+            <br />
+            <br />
+            <Typography variant="h5" align="center" color="primary">
+              Público alvo: estudantes de Graduação
+            </Typography>
+            <Typography variant="h5" align="center" color="primary">
+              Inscrições até 4 de agosto de 2021
+            </Typography>
+            <Typography variant="h5" align="center" color="primary">
+              Minicursos gratuitos e online
             </Typography>
           </Grid>
         </Grid>

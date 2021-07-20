@@ -20,12 +20,6 @@ class Subscription(models.Model):
         max_length=150,
     )
 
-    # Education
-    education = models.CharField(
-        verbose_name="Education",
-        max_length=150,
-    )
-
     # Position
     position = models.CharField(
         verbose_name="Position",

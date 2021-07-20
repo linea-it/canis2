@@ -22,12 +22,13 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
 
     queryset = Subscription.objects.all()
     serializer_class = SubscriptionSerializer
-    filter_fields = ('id', 'name', 'email', 'institute', 'education',
-                     'position', 'occupation', 'module_interest', 'certificate', 'creation_date',)
+    filter_fields = ('id', 'name', 'email', 'institute', 'position',
+                     'occupation', 'module_interest',
+                     'certificate', 'creation_date',)
 
     search_fields = ('id', 'name', 'email', 'institute',
-                     'position', 'education', 'occupation',)
-    ordering_fields = ('id', 'name', 'email', 'institute', 'education',
+                     'position', 'occupation',)
+    ordering_fields = ('id', 'name', 'email', 'institute'
                        'position', 'occupation',
                        'module_interest', 'certificate', 'creation_date',)
     ordering = ('id',)
@@ -84,7 +85,6 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             'name',
             'email',
             'institute',
-            'education',
             'position',
             'occupation',
             'module_interest',
@@ -97,7 +97,6 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             'name',
             'email',
             'institute',
-            'education',
             'position',
             'occupation',
             'module_interest',

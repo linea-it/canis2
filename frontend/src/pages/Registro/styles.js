@@ -7,9 +7,6 @@ const styles = makeStyles(() => ({
   grid: {
     textAlign: 'left',
   },
-  checkboxLabel: {
-    margin: '0 0 10px',
-  },
   strike: {
     textDecoration: 'line-through',
   },

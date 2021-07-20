@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Container, Typography } from '@material-ui/core';
+import { Grid, Container, Typography, Divider } from '@material-ui/core';
 import styles from './styles';
 
 function Programa() {
@@ -21,20 +21,28 @@ function Programa() {
               Programa
             </Typography>
             <br />
+            <br />
+
+            <Typography variant="h5" align="center" color="primary">
+              Minicurso LIneA Science Server
+            </Typography>
+            <br />
             <Typography
               variant="body1"
               className={classes.bodyTextBigger}
               align="justify"
               color="primary"
             >
-              O módulo inicial do minicurso apresenta as funcionalidades do{' '}
-              <a
-                href="scienceserver.linea.gov.br"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LIneA Science Server
-              </a>
+              O minicurso apresenta as funcionalidades do{' '}
+              <strong>
+                <a
+                  href="scienceserver.linea.gov.br"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LIneA Science Server
+                </a>
+              </strong>
               , plataforma criada para que o usuário tenha acesso aos dados dos
               seis anos de observação pelo Dark Energy Survey (DES) - que fazem
               parte do release público DR2 -, podendo visualizar todas as
@@ -80,7 +88,17 @@ function Programa() {
             >
               <strong>Aula 3:</strong> Em grupos, a turma irá apresentar as
               atividades propostas. Os grupos terão tutores para auxiliar na
-              realização das tarefas durante o curso.
+              realização das tarefas durante o curso
+            </Typography>
+            <br />
+            <Grid item xs={12} style={{ width: '100%' }}>
+              <Divider />
+            </Grid>
+
+            <br />
+
+            <Typography variant="h5" align="center" color="primary">
+              Minicurso Jupyter Notebook
             </Typography>
             <br />
             <Typography
@@ -89,10 +107,16 @@ function Programa() {
               align="justify"
               color="primary"
             >
-              O módulo seguinte apresenta a ferramenta{' '}
-              <a href="https://jupyter.org/" target="_blank" rel="noreferrer">
-                Jupyter Notebook
-              </a>{' '}
+              O minicurso apresenta a ferramenta{' '}
+              <strong>
+                <a
+                  href="https://jupyter.linea.gov.br/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Jupyter Notebook
+                </a>
+              </strong>{' '}
               e faz uma introdução à linguagem de programação Python com
               exemplos de uso das bibliotecas Numpy, Matplotlib, Pandas e
               Seaborn. Uma pequena introdução à linguagem SQL também será

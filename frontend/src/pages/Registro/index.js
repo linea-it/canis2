@@ -45,7 +45,6 @@ function Registro() {
       const name = formRef.current.name.value;
       const email = formRef.current.email.value;
       const institute = formRef.current.institute.value;
-      const education = formRef.current.education.value;
       const position = formRef.current.position.value;
       const occupation = formRef.current.occupation.value;
       const interest1 = formRef.current.interest1.checked ? 1 : null;
@@ -58,7 +57,6 @@ function Registro() {
         name,
         email,
         institute,
-        education,
         position,
         occupation,
         interest,
@@ -96,15 +94,6 @@ function Registro() {
           <Grid item xs={11} md={6} className={classes.grid}>
             <Typography variant="h3" align="center" color="primary">
               Registro
-            </Typography>
-            <Typography
-              variant="subtitle2"
-              align="center"
-              color="error"
-              gutterBottom
-            >
-              (As vagas serão concedidas aos 15 primeiros inscritos,
-              satisfazendo o critério anunciado)
             </Typography>
             <br />
             <form ref={formRef} autoComplete="off" onSubmit={handleSubmit}>
@@ -163,29 +152,11 @@ function Registro() {
               <div className={classes.textFields}>
                 <TextField
                   required
-                  id="education"
-                  type="text"
-                  variant="outlined"
-                  label="Formação"
-                  placeholder="Ex.: 2º Ano do Doutorado"
-                  name="education"
-                  fullWidth
-                  size="small"
-                  error={'education' in errorMessage}
-                  helperText={
-                    'education' in errorMessage ? errorMessage.education[0] : ''
-                  }
-                />
-              </div>
-
-              <div className={classes.textFields}>
-                <TextField
-                  required
                   id="position"
                   type="text"
                   variant="outlined"
                   label="Posição atual"
-                  placeholder="Ex.: Mestrando, Doutorando, Pós-Doutorando"
+                  placeholder="Ex.: Graduando, Mestrando, Doutorando, Pós-Doutorando"
                   name="position"
                   fullWidth
                   size="small"
@@ -203,6 +174,7 @@ function Registro() {
                   type="text"
                   variant="outlined"
                   label="Área de atuação"
+                  placeholder="Ex.: Ciência da Computação, Física, Astronomia"
                   name="occupation"
                   fullWidth
                   size="small"
@@ -217,27 +189,26 @@ function Registro() {
 
               <FormControl component="fieldset" className={classes.formControl}>
                 <FormLabel component="legend" className={classes.formLabel}>
-                  Módulo de Interesse:
+                  Minicurso de Interesse:
                 </FormLabel>
                 <FormGroup>
                   <FormControlLabel
                     label="LIneA Science Server"
                     labelPlacement="end"
-                    control={<Checkbox name="interest1" />}
+                    control={<Checkbox color="primary" name="interest1" />}
                   />
                   <FormControlLabel
                     label="Jupyter Notebook"
                     labelPlacement="end"
-                    control={<Checkbox name="interest2" />}
+                    control={<Checkbox color="primary" name="interest2" />}
                   />
                 </FormGroup>
               </FormControl>
 
               <FormControlLabel
                 label="Gostaria de certificado?"
-                labelPlacement="start"
-                className={classes.checkboxLabel}
-                control={<Checkbox name="certificate" />}
+                labelPlacement="end"
+                control={<Checkbox color="primary" name="certificate" />}
               />
 
               <Grid

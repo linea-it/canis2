@@ -139,7 +139,6 @@ function Registro() {
                   variant="outlined"
                   label="Instituição"
                   name="institute"
-                  placeholder="Apenas siglas maiúsculas"
                   fullWidth
                   size="small"
                   error={'institute' in errorMessage}

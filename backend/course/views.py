@@ -1,6 +1,6 @@
 import logging
 
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, serializers
 
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -22,6 +22,14 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
 
     queryset = Subscription.objects.all()
     serializer_class = SubscriptionSerializer
+
+    # Return, by default, the display name
+    # of the choice field (module_interest):
+    module_interest = serializers.SerializerMethodField()
+
+    def get_module_interest(self, obj):
+        return obj.get_module_interest_display()
+
     filter_fields = ('id', 'name', 'email', 'institute', 'position',
                      'occupation', 'module_interest',
                      'certificate', 'creation_date',)

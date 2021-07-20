@@ -18,10 +18,3 @@ class SubscriptionSerializer(serializers.ModelSerializer):
             'certificate',
             'creation_date',
         )
-
-    # Return, by default, the display name
-    # of the choice field (module_interest):
-    module_interest = serializers.SerializerMethodField()
-
-    def get_module_interest(self, obj):
-        return obj.get_module_interest_display()

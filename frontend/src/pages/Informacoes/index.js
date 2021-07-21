@@ -31,12 +31,11 @@ function Informacoes() {
             >
               Com a liberação dos dados do <em>Dark Energy Survey</em> (DES-DR2)
               e a entrada de novos projetos, como o{' '}
-              <em>Legacy Survey of Space and Time</em>
-              (LSST), fica evidente a importância de aumentar o engajamento da
-              comunidade no trabalho que vem sendo desenvolvido pelo LIneA com
-              apoio do INCT do e-Universo na área de e-Astronomia. Sendo assim,
-              nossa equipe vem planejando e desenvolvendo minicursos básicos
-              para{' '}
+              <em>Legacy Survey of Space and Time</em> (LSST), fica evidente a
+              importância de aumentar o engajamento da comunidade no trabalho
+              que vem sendo desenvolvido pelo LIneA com apoio do INCT do
+              e-Universo na área de e-Astronomia. Sendo assim, nossa equipe vem
+              planejando e desenvolvendo minicursos básicos para{' '}
               <strong>
                 Introdução a ferramentas computacionais aplicadas à e-Astronomia
               </strong>
@@ -47,7 +46,7 @@ function Informacoes() {
                 LSST
               </a>
               . Nesse contexto apresentamos os minicursos{' '}
-              <strong>LIneA Science Server</strong> e
+              <strong>LIneA Science Server</strong> e{' '}
               <strong>Jupyter Notebook</strong>.
             </Typography>
 

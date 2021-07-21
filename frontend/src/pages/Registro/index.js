@@ -155,7 +155,7 @@ function Registro() {
                   type="text"
                   variant="outlined"
                   label="Posição atual"
-                  placeholder="Ex.: Graduando, Mestrando, Doutorando, Pós-Doutorando"
+                  placeholder="Ex.: 3º Período de Graduação"
                   name="position"
                   fullWidth
                   size="small"

@@ -52,6 +52,10 @@ const styles = makeStyles(() => ({
     flexDirection: 'row',
     marginBottom: 12,
   },
+  link: {
+    fontWeight: 'bold',
+    textDecoration: 'underline',
+  },
 }));
 
 export default styles;
